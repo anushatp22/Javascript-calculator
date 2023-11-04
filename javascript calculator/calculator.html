@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <title>Calculator</title>
+    <link href="/calculator.css" rel="stylesheet"></link>
+
+    <body class="css-body">
+
+        <h1 class="css-heading">Simple Calculator</h1>
+        <p><input class='js-calculatedValue' id="css-input" type='text'></p>
+        <p>
+            <button onclick = "calc += '+'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+            "
+            class="js-calcValue"
+            >+</button>
+
+            <button  onclick = "calc += '-'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+            "
+            class="js-calcValue"
+            >-</button>
+
+            <button  onclick = "calc += '*'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >x</button>
+
+            <button  onclick = "calc += '/'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >/</button>
+
+        <p>
+            <button onclick = "calc += '7'
+            console.log(calc)
+            document.querySelector('.js-calculatedValue').value = calc
+            "
+            class="js-calcValue"
+            >7</button>
+
+            <button onclick = "calc += '8'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >8</button>
+
+            <button onclick = "calc += '9'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >9</button>
+
+            <button onclick = "calc += '0'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >0</button>
+
+        </p>
+        <p>
+            <button class="js-calcValue" onclick = "calc += '4'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            >4</button>
+
+            <button onclick = "calc += '5'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >5</button>
+
+            <button onclick = "calc += '6'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >6</button>
+
+            <button onclick="
+            calc += ''
+            console.log('Cleared');
+            document.querySelector('.js-calculatedValue').value = '';
+            " 
+            class="js-calcValue"
+            >C</button>
+
+        </p>
+        <p>
+            <button onclick = "calc += '1'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >1</button>
+
+            <button onclick = "calc += '2'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >2</button>
+
+            <button onclick = "calc += '3'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >3</button>
+
+            <button onclick = "calc += '.'
+                        console.log(calc)
+                        document.querySelector('.js-calculatedValue').value = calc
+
+            "
+            class="js-calcValue"
+            >.</button>
+
+        </p>
+            <button onclick="expression(); calc += '='
+            "
+            class="js-calcValue"  id="css-button"
+            >=</button>
+
+            <script>
+                
+                    let calc = ''
+
+
+                    function expression() {
+                        const value = eval(calc)
+                        console.log(value)
+                        document.querySelector('.js-calculatedValue').value = value
+                    }
+            </script>
+           </form>
+    </body>
+</html>
